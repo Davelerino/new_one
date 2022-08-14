@@ -3,8 +3,6 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"fmt"
-	"go_ex/packs"
 	"os"
 )
 
@@ -18,11 +16,11 @@ func main() {
 	}
 	d := json.NewDecoder(f)
 	_ = d
-	var story packs.Story
+	// var story
 
-	if err := d.Decode(&story); err != nil {
-		fmt.Println("le ficher est illisible")
-	}
-	fmt.Printf("\n %+v", story)
+	// if err := d.Decode(&story); err != nil {
+	// 	fmt.Println("le ficher est illisible")
+	// }
+	// fmt.Printf("\n %+v", story)
 
 }
